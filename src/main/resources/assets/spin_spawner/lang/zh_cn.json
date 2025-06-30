@@ -1,0 +1,18 @@
+{
+  "block.spin_spawner.spin_spawner": "旋转刷怪笼",
+  "create.gui.spawner.generate_failed": "无法产生应力",
+  "create.gui.spawner.incorrect_spawn_rule_1": "需要满足刷怪笼中实体的生成条件才能产生应力。",
+  "create.gui.spawner.incorrect_spawn_rule_2": "提示：即使生成条件满足，某些实体也可能有一定概率生成失败。",
+  "create.gui.spawner.insufficient_space": "在%1$d格半径范围内没有足够的生成空间。",
+  "create.gui.spawner.invalid_entity": "刷怪笼中无有效实体或无实体。",
+  "create.gui.spawner.spawn_failed": "上次生成失败",
+  "create.gui.spawner.too_many_entities": "在%1$d格半径范围内存在过多相同实体。",
+  "spin_spawner.ponder.shared.see_other": "%1$s",
+  "spin_spawner.ponder.shared.this_is": "这是旋转刷怪笼",
+  "spin_spawner.ponder.spin_spawner_generator.header": "旋转刷怪笼：应力模式",
+  "spin_spawner.ponder.spin_spawner_generator.text_1": "当它接收到红石信号时，将不会生成实体，而是产生应力。",
+  "spin_spawner.ponder.spin_spawner_generator.text_2": "此模式具有固定的转速 %1$d rpm，产生的应力值与刷怪模式相同。",
+  "spin_spawner.ponder.spin_spawner_spawner.header": "旋转刷怪笼：刷怪模式",
+  "spin_spawner.ponder.spin_spawner_spawner.text_1": "它可以忽略除空间要求外的所有生成条件。",
+  "spin_spawner.ponder.spin_spawner_spawner.text_2": "所需的应力与实体体积的平方根成正比。"
+}

@@ -1,0 +1,18 @@
+{
+  "block.spin_spawner.spin_spawner": "Spin Spawner",
+  "create.gui.spawner.generate_failed": "Generating Failed",
+  "create.gui.spawner.incorrect_spawn_rule_1": "Need to be matched in order entity's spawning conditions in spawner to generate stress.",
+  "create.gui.spawner.incorrect_spawn_rule_2": "Tip: some entity have a probability of failing to spawn even if spawning conditions is acceptable.",
+  "create.gui.spawner.insufficient_space": "%1$d block radius have no enough space to be spawn.",
+  "create.gui.spawner.invalid_entity": "No entity or invalid entity in spawner.",
+  "create.gui.spawner.spawn_failed": "Last Spawning Failed",
+  "create.gui.spawner.too_many_entities": "Too many of the same entities within %1$d block radius.",
+  "spin_spawner.ponder.shared.see_other": "%1$s",
+  "spin_spawner.ponder.shared.this_is": "This is a Spin Spawner",
+  "spin_spawner.ponder.spin_spawner_generator.header": "Spin Spawner Generator Mode",
+  "spin_spawner.ponder.spin_spawner_generator.text_1": "When it has redstone signal, instead of spawning entities, it will generate stress.",
+  "spin_spawner.ponder.spin_spawner_generator.text_2": "This mode has a fixed speed of %1$d rpm and the same stress as the spawner mode.",
+  "spin_spawner.ponder.spin_spawner_spawner.header": "Spin Spawner Spawner Mode",
+  "spin_spawner.ponder.spin_spawner_spawner.text_1": "It can ignore spawning conditions except empty space.",
+  "spin_spawner.ponder.spin_spawner_spawner.text_2": "Required stress is proportional to the sqrt of the volume of entity."
+}

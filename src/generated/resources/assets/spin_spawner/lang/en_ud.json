@@ -1,0 +1,18 @@
+{
+  "block.spin_spawner.spin_spawner": "ɹǝuʍɐdS uıdS",
+  "create.gui.spawner.generate_failed": "pǝןıɐℲ buıʇɐɹǝuǝ⅁",
+  "create.gui.spawner.incorrect_spawn_rule_1": "˙ssǝɹʇs ǝʇɐɹǝuǝb oʇ ɹǝuʍɐds uı suoıʇıpuoɔ buıuʍɐds s,ʎʇıʇuǝ ɹǝpɹo uı pǝɥɔʇɐɯ ǝq oʇ pǝǝN",
+  "create.gui.spawner.incorrect_spawn_rule_2": "˙ǝןqɐʇdǝɔɔɐ sı suoıʇıpuoɔ buıuʍɐds ɟı uǝʌǝ uʍɐds oʇ buıןıɐɟ ɟo ʎʇıןıqɐqoɹd ɐ ǝʌɐɥ ʎʇıʇuǝ ǝɯos :dı⟘",
+  "create.gui.spawner.insufficient_space": "˙uʍɐds ǝq oʇ ǝɔɐds ɥbnouǝ ou ǝʌɐɥ snıpɐɹ ʞɔoןq %1$d",
+  "create.gui.spawner.invalid_entity": "˙ɹǝuʍɐds uı ʎʇıʇuǝ pıןɐʌuı ɹo ʎʇıʇuǝ oN",
+  "create.gui.spawner.spawn_failed": "pǝןıɐℲ buıuʍɐdS ʇsɐꞀ",
+  "create.gui.spawner.too_many_entities": "˙snıpɐɹ ʞɔoןq %1$d uıɥʇıʍ sǝıʇıʇuǝ ǝɯɐs ǝɥʇ ɟo ʎuɐɯ oo⟘",
+  "spin_spawner.ponder.shared.see_other": "%1$s",
+  "spin_spawner.ponder.shared.this_is": "ɹǝuʍɐdS uıdS ɐ sı sıɥ⟘",
+  "spin_spawner.ponder.spin_spawner_generator.header": "ǝpoW ɹoʇɐɹǝuǝ⅁ ɹǝuʍɐdS uıdS",
+  "spin_spawner.ponder.spin_spawner_generator.text_1": "˙ssǝɹʇs ǝʇɐɹǝuǝb ןןıʍ ʇı 'sǝıʇıʇuǝ buıuʍɐds ɟo pɐǝʇsuı 'ןɐubıs ǝuoʇspǝɹ sɐɥ ʇı uǝɥM",
+  "spin_spawner.ponder.spin_spawner_generator.text_2": "˙ǝpoɯ ɹǝuʍɐds ǝɥʇ sɐ ssǝɹʇs ǝɯɐs ǝɥʇ puɐ ɯdɹ %1$d ɟo pǝǝds pǝxıɟ ɐ sɐɥ ǝpoɯ sıɥ⟘",
+  "spin_spawner.ponder.spin_spawner_spawner.header": "ǝpoW ɹǝuʍɐdS ɹǝuʍɐdS uıdS",
+  "spin_spawner.ponder.spin_spawner_spawner.text_1": "˙ǝɔɐds ʎʇdɯǝ ʇdǝɔxǝ suoıʇıpuoɔ buıuʍɐds ǝɹoubı uɐɔ ʇI",
+  "spin_spawner.ponder.spin_spawner_spawner.text_2": "˙ʎʇıʇuǝ ɟo ǝɯnןoʌ ǝɥʇ ɟo ʇɹbs ǝɥʇ oʇ ןɐuoıʇɹodoɹd sı ssǝɹʇs pǝɹınbǝᴚ"
+}
