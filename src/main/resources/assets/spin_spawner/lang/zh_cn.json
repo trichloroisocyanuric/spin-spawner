@@ -1,5 +1,6 @@
 {
   "block.spin_spawner.spin_spawner": "旋转刷怪笼",
+  "create.gui.spawner.difficulty_peaceful": "难度是和平，但生成的实体不是。",
   "create.gui.spawner.generate_failed": "无法产生应力",
   "create.gui.spawner.incorrect_spawn_rule_1": "需要满足刷怪笼中实体的生成条件才能产生应力。",
   "create.gui.spawner.incorrect_spawn_rule_2": "提示：即使生成条件满足，某些实体也可能有一定概率生成失败。",

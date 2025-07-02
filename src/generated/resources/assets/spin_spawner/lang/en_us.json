@@ -1,5 +1,6 @@
 {
   "block.spin_spawner.spin_spawner": "Spin Spawner",
+  "create.gui.spawner.difficulty_peaceful": "Difficulty is peaceful but entity that will spawn are not.",
   "create.gui.spawner.generate_failed": "Generating Failed",
   "create.gui.spawner.incorrect_spawn_rule_1": "Need to be matched in order entity's spawning conditions in spawner to generate stress.",
   "create.gui.spawner.incorrect_spawn_rule_2": "Tip: some entity have a probability of failing to spawn even if spawning conditions is acceptable.",

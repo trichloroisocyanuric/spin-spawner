@@ -57,6 +57,10 @@ public abstract class BaseSpinSpawner extends BaseSpawner {
         ListTag posList = compoundtag.getList("Pos", 6);
         int posSize = posList.size();
 
+        if (!optional.get().getCategory().isFriendly() && serverLevel.getDifficulty() == Difficulty.PEACEFUL) {
+            return Result.DIFFICULTY_PEACEFUL;
+        }
+
         for (int i = 0; i < spawnCount; i++) {
             double x = posSize >= 1
                     ? posList.getDouble(0)
@@ -262,7 +266,8 @@ public abstract class BaseSpinSpawner extends BaseSpawner {
         SUCCEED(null),
         INVALID_ENTITY("gui.spawner.invalid_entity"),
         TOO_MANY_ENTITIES("gui.spawner.too_many_entities"),
-        INSUFFICIENT_SPACE("gui.spawner.insufficient_space");
+        INSUFFICIENT_SPACE("gui.spawner.insufficient_space"),
+        DIFFICULTY_PEACEFUL("gui.spawner.difficulty_peaceful");
 
         public final @Nullable String langKey;
 
