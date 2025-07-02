@@ -44,12 +44,10 @@ public class SpinSpawnerMod {
     }
 
     private static void onClientSetup(final FMLClientSetupEvent event) {
-        if (ModList.get().isLoaded("ponder")) {
-            try {
-                PonderIndex.addPlugin(new ModPonderPlugin());
-            } catch (Exception e) {
-                LOGGER.warn("failed to load ponder: {}", e.toString());
-            }
+        try {
+            PonderIndex.addPlugin(new ModPonderPlugin());
+        } catch (Exception e) {
+            LOGGER.warn("failed to load ponder: {}", e.toString());
         }
     }
 }
