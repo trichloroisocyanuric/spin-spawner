@@ -1,5 +1,6 @@
 package com.example.spin_spawner;
 
+import com.example.spin_spawner.compat.apothic_spawners.ApothSpawnerTileProvider;
 import com.example.spin_spawner.data.config.Config;
 import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
 import net.minecraft.core.BlockPos;
@@ -80,6 +81,8 @@ public abstract class BaseSpinSpawner extends BaseSpawner {
                 if (entity == null || isTooManyNearbyEntities(serverLevel, pos, entity.getClass())) {
                     return Result.TOO_MANY_ENTITIES;
                 }
+
+                getApothProxy().setApothEntityState(entity);
 
                 entity.moveTo(entity.getX(), entity.getY(), entity.getZ(), randomsource.nextFloat() * 360.0F, 0.0F);
                 if (entity instanceof Mob mob) {
@@ -241,7 +244,7 @@ public abstract class BaseSpinSpawner extends BaseSpawner {
     }
 
     @Override
-    public void setEntityId(EntityType<?> type, @Nullable Level level, RandomSource random, BlockPos pos) {
+    public void setEntityId(@Nonnull EntityType<?> type, @Nullable Level level, RandomSource random, BlockPos pos) {
         super.setEntityId(type, level, random, pos);
         lastResult = Result.SUCCEED;
     }
@@ -261,6 +264,8 @@ public abstract class BaseSpinSpawner extends BaseSpawner {
     protected abstract float getKineticSpeed();
 
     protected abstract boolean isGenerating();
+
+    protected abstract ApothSpawnerTileProvider getApothProxy();
 
     public enum Result {
         SUCCEED(null),
