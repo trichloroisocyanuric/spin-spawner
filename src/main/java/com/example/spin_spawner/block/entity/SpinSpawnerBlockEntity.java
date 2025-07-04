@@ -1,7 +1,7 @@
 package com.example.spin_spawner.block.entity;
 
-import com.example.spin_spawner.block.ModBlocks;
 import com.example.spin_spawner.BaseSpinSpawner;
+import com.example.spin_spawner.block.ModBlocks;
 import com.example.spin_spawner.data.config.Config;
 import com.mojang.datafixers.util.Either;
 import com.simibubi.create.content.kinetics.base.GeneratingKineticBlockEntity;
