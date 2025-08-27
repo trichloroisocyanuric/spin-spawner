@@ -10,6 +10,7 @@
   "create.gui.spawner.too_many_entities": "Too many of the same entities within %1$d block radius.",
   "spin_spawner.ponder.shared.see_other": "%1$s",
   "spin_spawner.ponder.shared.this_is": "This is a Spin Spawner",
+  "spin_spawner.ponder.shared.upgrade_ponder": "upgrade ponder to 1.0.58+ to view.",
   "spin_spawner.ponder.spin_spawner_generator.header": "Spin Spawner Generator Mode",
   "spin_spawner.ponder.spin_spawner_generator.text_1": "When it has redstone signal, instead of spawning entities, it will generate stress.",
   "spin_spawner.ponder.spin_spawner_generator.text_2": "This mode has a fixed speed of %1$d rpm and the same stress as the spawner mode.",

@@ -139,7 +139,7 @@ public abstract class BaseSpinSpawner extends BaseSpawner {
             Optional<EntityType<?>> optional = EntityType.by(nextSpawnData.getEntityToSpawn());
             if (optional.isPresent()) {
                 EntityDimensions dimensions = optional.get().getDimensions();
-                return Mth.sqrt(dimensions.height() * dimensions.width() * dimensions.width());
+                return Mth.sqrt(dimensions.height()) * dimensions.width();
             }
         }
         return 0;

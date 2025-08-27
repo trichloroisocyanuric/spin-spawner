@@ -10,6 +10,7 @@ import net.createmod.catnip.math.VecHelper;
 import net.createmod.ponder.api.PonderPalette;
 import net.createmod.ponder.api.element.ElementLink;
 import net.createmod.ponder.api.element.EntityElement;
+import net.createmod.ponder.api.element.TextElementBuilder;
 import net.createmod.ponder.api.scene.SceneBuilder;
 import net.createmod.ponder.api.scene.SceneBuildingUtil;
 import net.minecraft.client.resources.language.I18n;
@@ -99,11 +100,12 @@ public class SpinSpawnerScene {
                 40, 4);
         scene.world().setKineticSpeed(util.select().everywhere(), 0.f);
 
-        scene.overlay().showText(60)
-                .pointAt(util.vector().topOf(spawnerPos))
-                .colored(PonderPalette.RED)
-                .placeNearTarget()
-                .sharedText("see_other", I18n.get("create.gui.stressometer.overstressed"));
+        sharedText(scene.overlay().showText(60)
+                        .pointAt(util.vector().topOf(spawnerPos))
+                        .colored(PonderPalette.RED)
+                        .placeNearTarget(),
+                I18n.get("create.gui.stressometer.overstressed")
+        );
 
         scene.overlay().showText(60)
                 .pointAt(util.vector().topOf(shaftPos))
@@ -155,23 +157,40 @@ public class SpinSpawnerScene {
         scene.world().setKineticSpeed(util.select().position(shaftPos), 64);
         scene.effects().rotationSpeedIndicator(shaftPos);
 
-        scene.overlay().showText(80)
-                .pointAt(util.vector().centerOf(grassPos))
-                .placeNearTarget()
-                .sharedText("see_other", I18n.get("create.gui.spawner.incorrect_spawn_rule_1"));
+        sharedText(scene.overlay().showText(80)
+                        .pointAt(util.vector().centerOf(grassPos))
+                        .placeNearTarget(),
+                I18n.get("create.gui.spawner.incorrect_spawn_rule_1")
+        );
         scene.idle(90);
 
-        scene.overlay().showText(80)
+        sharedText(scene.overlay().showText(80)
                 .pointAt(util.vector().centerOf(spawnerPos))
-                .placeNearTarget()
-                .sharedText("see_other", I18n.get("create.gui.spawner.incorrect_spawn_rule_2"));
+                .placeNearTarget(), I18n.get("create.gui.spawner.incorrect_spawn_rule_2"));
         scene.idle(90);
 
-        scene.overlay().showText(60)
-                .pointAt(util.vector().topOf(shaftPos))
-                .placeNearTarget()
-                .text("This mode has a fixed speed of %1$d rpm and the same stress as the spawner mode.", Config.generationSpeed);
+        text(scene.overlay().showText(60)
+                        .pointAt(util.vector().topOf(shaftPos))
+                        .placeNearTarget(),
+                "This mode has a fixed speed of %1$d rpm and the same stress as the spawner mode.", Config.generationSpeed
+        );
 
         scene.idle(70);
+    }
+
+    private static void text(TextElementBuilder builder, String text, Object... params) {
+        try {
+            builder.text(text, params);
+        } catch (NoSuchMethodError ignored) {
+            builder.text(text);
+        }
+    }
+
+    private static void sharedText(TextElementBuilder builder, Object... params) {
+        try {
+            builder.sharedText("see_other", params);
+        } catch (NoSuchMethodError ignored) {
+            builder.sharedText("upgrade_ponder");
+        }
     }
 }

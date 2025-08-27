@@ -23,5 +23,6 @@ public class ModPonderPlugin implements PonderPlugin {
     public void registerSharedText(SharedTextRegistrationHelper helper) {
         helper.registerSharedText("see_other", "%1$s");
         helper.registerSharedText("this_is", "This is a Spin Spawner");
+        helper.registerSharedText("upgrade_ponder", "upgrade ponder to 1.0.58+ to view.");
     }
 }
